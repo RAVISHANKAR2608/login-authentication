@@ -1,38 +1,87 @@
 .App {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-image: url('../Images/Background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 28vw;
+  height: 85vh;
   color: white;
+  border: 1px double whitesmoke;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: aqua;
+  font-family: cursive;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input {
+  width: 20vw;
+  margin: 20px auto;
+}
+
+h4 {
+  width: 20vw;
+  margin: -1em auto 0.7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+}
+
+h4:before, h4:after {
+  content: "";
+  display: inline-block;
+  width: 45%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px dashed;
+}
+
+h4:after {
+  margin: 0 -55% 0 0.5em;
+}
+
+.google, .fb, .github, .instagram {
+  width: 15vw;
+  margin: 5px auto;
+  text-align: start;
+}
+
+.icon {
+  width: 40px;
+  padding :15px !important;
+  margin: 20px 5px;
+}
+
+.google:hover {
+  color: orangered;
+}
+
+.fb:hover {
+  color: blue;
+}
+
+.github:hover {
+  color: purple;
+}
+
+.instagram:hover {
+  color: blueviolet;
+}
+
+.result {
+  color: salmon;
+  font-size: 1.25rem;
+  font-family: cursive;
 }
